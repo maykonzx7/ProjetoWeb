@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva - Overlook Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Overlook Hotel</h1>
+    <nav class="navigation">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="rooms.html" class="nav-link">Quartos</a>
+      <a href="location.html" class="nav-link">Localização</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="reservation-details-section">
+      <h2 class="reservation-section-title">Conclua sua reserva</h2>
+
+      <div class="carousel-slide">
+        <img src="https://i.pinimg.com/736x/eb/9b/2f/eb9b2f0e79184fb6ed4d637ed3954607.jpg" alt="Luxury Suite">
+      </div>
+
+      <div class="reservation-room-details">
+        <div class="reservation-room-info">
+          <div class="grid-container columns-2">
+            <h3 class="reservation-room-title">Luxury Suite</h3>
+            <p class="reservation-room-price">R$ 1.500,00 / Noite</p>
+          </div>
+          <p class="reservation-room-description">
+            Uma suíte espaçosa com vista para o mar, cama king-size e varanda privativa. Inclui todas as comodidades de luxo para garantir uma estadia confortável e relaxante. Ideal para casais ou hóspedes que buscam a melhor experiência durante sua estadia.
+          </p>
+        </div>
+      </div>
+
+      <form class="reservation-form" novalidate>
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required>
+
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required>
+
+        <label for="guest-name">Seu nome:</label>
+        <input type="text" id="guest-name" name="guest-name" placeholder="Nome completo" required>
+
+        <label for="guest-email">Seu E-mail:</label>
+        <input type="email" id="guest-email" name="guest-email" placeholder="Endereço de e-mail" required>
+
+        <label for="payment-method">Método de pagamento:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="">Selecione o método de pagamento</option>
+          <option value="credit-card">Cartão de crédito</option>
+          <option value="debit-card">Cartão de Debito</option>
+          <option value="pix">Pix</option>
+        </select>
+
+        <button type="submit" class="reservation-submit-btn">Confirm Reservation</button>
+      </form>
+      <div class="confirmation-message">
+        Sua reserva foi concluída com sucesso! Obrigado por escolher o Overlook Hotel.
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-curve"></div>
+    <div class="footer-content">
+      <div class="grid-container columns-2">
+        <div class="grid-item">
+          <h2>Overlook Hotel</h2>
+        </div>
+        <div class="grid-item">
+          <ul>
+            <li>Sobre nós</li>
+            <li>FAQ</li>
+            <li>+1 9812-3810</li>
+            <li>Deserto do Carson, Nevada, Estados Unidos</li>
+            <li>Feito por Maykon Vanderson & Erick Levi</li>
+          </ul>
+        </div>
+      </div>
+      <p>© 2024 Overlook Hotel. Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>
